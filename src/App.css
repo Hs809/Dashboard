@@ -1,0 +1,636 @@
+.App{
+    display:grid;
+    grid-template-columns:50px 1fr;
+}
+/* SideBar Css */
+.sidebar{
+    background:#242B2E;
+    width:60px;
+    height:165vh;
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+}
+.sidebarWrapper{
+    margin-top:19px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    
+}
+.sidebarWrapper .logo{
+        font-size:30px;
+        border-radius:50%;
+        color:#fff;
+        cursor:pointer;
+}
+.sidebarWrapper ul{
+    padding:0;
+}
+.sidebarWrapper ul li{
+    list-style:none;
+        color:white;
+        margin-bottom:19px;
+        font-size:20px;
+        cursor:pointer;
+        transition:0.3s all;
+}
+.sidebarWrapper ul li:hover{
+    color:#1B98F5;
+    transition:0.3s all;
+}
+.settingWrapper {
+    margin:auto;
+    font-size:20px;
+    color:#fff ;
+    cursor:pointer;
+    transition:0.3s all;
+}
+.settingWrapper:hover{
+    color:#1B98F5;
+    transition:0.3s all;
+}
+
+/* Main Css */
+.divider{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left:40px;
+}
+
+.headerContainer{
+    margin-top:19px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    color:#BDBDBD;
+    height:30px;
+}
+.headerContainer .wrapper{
+    display:flex;
+    align-items:center;
+    margin-right:19px;
+}
+.headerContainer .wrapper .dot{
+    color: #1B98F5;
+    position: absolute;
+    top: -30px;
+    font-size: 50px;
+    right: 193px;
+}
+.headerContainer .wrapper p{
+    margin-right:19px;
+    margin-left:19px;
+    font-size:16px;
+    font-family: 'Poppins', sans-serif;
+}
+.headerContainer .wrapper img{
+    width:30px;
+    border-radius:50%;
+}
+.bell{
+    font-size:20px;
+    width:25px;
+    transition:0.3s all;
+    cursor:pointer;
+    color:#fff;
+    
+}
+.bell:hover{
+    color: #1B98F5;
+    transition:0.3s all;
+}
+.dashboardHeader{
+    color:#BDBDBD;
+    margin-bottom: 19px;
+}
+.dashboardHeader h3,p{
+    margin-top:0px;
+    margin-bottom:0px;
+    letter-spacing:1px;
+}
+.dashboardHeader p span{
+    color:#1B98F5;
+    font-weight:500;
+    letter-spacing:1px;
+}
+.cardWrapper{
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+    gap:10px;
+    
+}
+.cardWrapper .secondcard{
+    box-shadow: -15px -10px 10px 12px rgba(0, 0, 0, 0.1);
+}
+.cardInfos {
+    width:250px;
+    height:100px;
+    color:#fff;
+    border:1px solid #CAD5E2;
+    border-radius:10px;
+    margin-left:19px;
+    
+    
+    
+
+
+
+
+}
+.cardInfos .wrapper{
+    transform:translate(35px,15px);;
+    background:#1B98F5;
+    border-radius:10px;
+    border:none;
+    width:250px;
+    height:120px;
+}
+.cardInfos .top{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    
+
+}
+.cardInfos .top h5,p{
+    margin:0;
+    margin-top:5px;
+}
+.cardInfos h2{
+    margin:0;
+    margin-top:10px;
+}
+.cardInfos .bottom{
+    position:relative;
+}
+.cardInfos .bottom .rate{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin-left:19px;
+    margin-top:5px;
+}
+.cardInfos .bottom .rate .arrow{
+    font-size:15px;
+    color:#fff;
+}
+.cardInfos .bottom .rate p{
+    margin:0;
+    color:#fff;
+} 
+.cardInfos .bottom .part1 h2 {
+    margin-left:19px;
+}
+.cardInfos .bottom .percentage svg circle{
+    width:150px;
+    height:150px;
+    fill:none;
+    stroke-width:5;
+    stroke:#000;
+    transform: translate(5px , 5px);
+    stroke-dasharray:220;
+    stroke-dashoffset:220;
+    stroke-linecap:round;   
+}
+.cardInfos .bottom .percentage svg{
+    position: absolute;
+    top: -5px;
+    left: 150px;
+}
+.cardInfos .bottom .percentage .number {
+    position: absolute;
+    top: 18px;
+    left: 163px;
+    color:#fff;
+}
+.cardInfos .bottom .percentage .number p{
+    font-size:16px;
+    margin:0;
+}
+.cardInfos .bottom .percentage svg circle:nth-child(1){
+    stroke-dashoffset:0;
+    stroke:#1B98F5;
+}
+.cardInfos .bottom .percentage svg circle:nth-child(2){
+    stroke-dashoffset:calc(220 - (220 * 60) / 100);
+    stroke:#fff;
+}
+.chartWrapper{
+    display:grid;
+    grid-template-columns:1.5fr 1fr;
+    gap:10px;
+}
+/* Card Css */
+.cardInfo{
+    width:250px;
+    height:100px;
+    color:#fff;
+    border:1px solid #CAD5E2;
+    border-radius:5px;
+}
+.cardInfo .top{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.cardInfo .top h5,p{
+    margin:0;
+    margin-top:5px;
+}
+.cardInfo h2{
+    margin:0;
+    margin-top:5px;
+}
+.cardInfo .bottom {
+    position:relative;
+}
+.cardInfo .bottom .rate{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin-left:19px;
+    margin-top:5px;
+}
+.cardInfo .bottom .rate .arrow {
+    font-size:15px;
+    color:#8B008B;
+}
+.cardInfo .bottom .rate .p{
+    margin:0;
+    color:#8B008B;
+}
+.cardInfo .bottom .part1 h2 {
+    margin-left:19px;
+}
+.cardInfo .bottom .percentage svg circle{
+    width:150px;
+    height:150px;
+    fill:none;
+    stroke-width:5;
+    stroke:#000;
+    transform: translate(5px , 5px);
+    stroke-dasharray:220;
+    stroke-dashoffset:220;
+    stroke-linecap:round;
+}
+.cardInfo .bottom .percentage svg{
+    position: absolute;
+    top: -5px;
+    left: 150px;
+}
+.cardInfo .bottom .percentage .number {
+    position: absolute;
+    top: 18px;
+    left: 163px;
+    color:#999;
+}
+.cardInfo .bottom .percentage .number p{
+    font-size:16px;
+    margin:0;
+}
+.cardInfo .bottom .percentage svg circle:nth-child(1){
+    stroke-dashoffset:0;
+    stroke:#f3f3f3;
+}
+.cardInfo .bottom .percentage svg circle:nth-child(2){
+    stroke-dashoffset:calc(220 - (220 * 60) / 100);
+    stroke:#8B008B;
+}
+
+.chartContainer {
+    margin-top:60px;
+    color:#fff;
+    border-radius: 12px;
+    background: #151515;
+    box-shadow:  15px 15px 30px #0c0c0c,
+                -15px -15px 30px #1e1e1e;
+}
+.chartContainer .title{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.chartContainer .title h3{
+    cursor:pointer;
+}
+.chartContainer .title div {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    cursor:pointer;
+}
+.chartContainer .title div p {
+    margin-right:10px;
+    margin-left:10px;
+    cursor:pointer;
+}
+/* Applications Css */
+.applicationContainer {
+    margin-top: 60px;
+    margin-left:19px;
+    padding-right:10px;
+    padding-top:10px;
+    border-radius: 12px;
+    background: #151515;
+    box-shadow:  15px 15px 30px #0c0c0c,
+                -15px -15px 30px #1e1e1e;
+}
+.applicationContainer h3,h4{
+    margin:0;
+}
+.applicationContainer ul li{
+    font-size:16px;
+    margin-top:19px;
+    margin-bottom:19px;
+}
+.applicationContainer ul li:nth-child(1){
+    color:#BDBDBD;
+}
+.applicationContainer ul li:nth-child(2){
+    color:#1B98F5;
+}
+.applicationContainer ul li:nth-child(3){
+    color:#FF6263;
+}
+.applicationContainer ul li:nth-child(4){
+    color:#BDBDBD;
+}
+.applicationContainer ul li:nth-child(5){
+    color:#5A20CB;
+}
+.applicationContainer .bar{
+    width:150px;
+    height:10px;
+    background:#242B2E;
+    border-radius:5px;
+}
+.applicationContainer .bar .progress {
+    height:10px;
+    border-radius:5px;
+}
+.applicationContainer .wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+/* Information CSs */
+
+.informationContainer {
+    margin-top:40px;
+    padding:10px;
+    border-radius: 12px;
+    background: #151515;
+    box-shadow:  15px 15px 30px #0c0c0c,
+                -15px -15px 30px #1e1e1e;
+}
+.informationHeader{
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;  
+}
+.informationHeader .icontainer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    top:20px;
+    color:#FF6263;
+}
+.informationHeader h3{
+    margin:0;
+    font-size:14px;
+}
+.informationInfos{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    color:#fff;
+    margin-top:40px;
+}
+.informationInfos h3{
+    margin:0;
+    font-size:14px;
+}
+.informationInfos h2,p{
+    margin: 0;
+}
+.informationInfos div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.informationInfos div h3{
+    font-size:15px;
+}
+.informationInfos div div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+    color:#1B98F5;
+    margin-top:19px;
+}
+.informationButtons {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-top:40px;
+}
+.informationButtons button{
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    width: 220px;
+    height:50px;
+}
+.informationButtons button:nth-child(1){
+    background:#1B98F5;
+    transition:0.5s all;
+}
+.informationButtons button:nth-child(1):hover {
+    box-shadow: inset 250px 0 0 0 #383CC1;
+    transition:0.5s all;
+}
+.informationButtons button:nth-child(2){
+    background:#FF6263;
+    transition:0.5s all;
+}
+.informationButtons button:nth-child(2):hover {
+    box-shadow: inset 250px 0 0 0 #B9345A;
+    transition:0.5s all;
+}
+/* Pie Chart Css */
+.pieContainer {
+    margin-top:40px;
+    color:#fff;
+    border:1px #424242;
+    border-radius: 19px;
+    background: linear-gradient(225deg, #161616, #131313);
+    box-shadow:  -7px 7px 29px #0b0b0b,
+                 7px -7px 29px #1f1f1f;
+}
+.pieContainer .container{
+    position:relative;
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.pieContainer p{
+    position:absolute;
+    font-size:11px;
+}
+.pieContainer .pieheader{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-top:19px;
+}
+.pieContainer .pieheader h3{
+    margin:0;
+    font-size:15px;
+    cursor:pointer;
+}
+.pieContainer .pieheader .logo{
+    font-size:20px;
+    cursor:pointer;
+}
+.sideHeaderContainer {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.sideHeaderContainer button{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    background:#1B98F5;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    color:#fff;
+    width:90px;
+    height:40px;
+    transition:0.5s all;
+}
+.sideHeaderContainer button p {
+    margin:0px;
+    margin-left:5px;
+    margin-right:5px;
+}
+.sideHeaderContainer button:hover{
+    box-shadow: inset 90px 0 0 0 #242B2E;
+    border-radius:5px;
+    transition:0.5s all;
+}
+.sideHeaderSearchbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    border-radius:5px;
+    padding:5px;
+}
+.sideHeaderSearchbar .search{
+    color:#BDBDBD;
+    font-size:15px;
+    margin-right:5px;
+}
+.sideHeaderSearchbar input{
+    padding:5px;
+    border:none;
+    background:none;
+    color:#848484;
+}
+.sideHeaderSearchbar input::placeholder {
+    color:#848484;
+}
+.sideHeaderSearchbar input:focus {
+    outline:0;
+}
+/* SideInfo Css */
+.sideInfoContainer {
+    display:grid;
+    grid-template-rows:50px 1fr;
+    margin-left:19px;
+}
+.sideInformationContainer {
+    position:relative;
+    color:#BDBDBD;
+    margin-top:40px;
+    border-radius: 12px;
+    background: #151515;
+    box-shadow:  15px 15px 30px #0c0c0c,
+                 -15px -15px 30px #1e1e1e;
+}
+.sideInformationContainer .head{
+    text-align: center;
+}
+.sideInformationContainer img{
+    width:400px;
+    height:300px;
+}
+.sideInformationNewApplications  {
+    position: absolute;
+    top:307px;
+    right:0px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow:  -29px 29px 66px #0f0f0f,
+                 29px -29px 66px #1b1b1b;
+    z-index:10;
+    background:#0D0D0D;
+    padding:20px;
+    height:555px;
+    width:350px;
+}
+.sideInformationNewApplications .sideIndormationheader{
+    margin-bottom:40px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.sideInformationNewApplications .sideIndormationheader h3{
+    margin: 0;
+}
+.sideInformationNewApplications .sideIndormationheader .right{
+    font-size:20px;
+}
+.sideInformationApplications {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:19px;
+}
+.sideInformationApplications h3,p{
+    margin: 0;
+}
+.sideInformationApplications .profilepic{
+    font-size:20px;
+    margin-right:19px;
+    margin-left:19px;
+}
+.sideInformationApplications .personalinfo h3{
+    font-size: 18px;
+}
+.sideInformationApplications .personalinfo p{
+    font-size:10px;
+}
+.sideInformationApplications .personalinfo span{
+    color:#1B98F5;
+}
+.sideInformationApplications .wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.sideInformationApplications .send{
+    margin-right:19px;
+}
+.sideInformationApplications .logos{
+    margin-right:19px;
+}

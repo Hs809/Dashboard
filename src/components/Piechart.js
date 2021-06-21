@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { VictoryPie } from "victory-pie";
 import {BiDotsHorizontalRounded} from 'react-icons/bi'
 
@@ -12,7 +11,7 @@ const myData = [
 function Piechart() { 
     
     return (
-        <Container>
+        <div className = "pieContainer">
             <div className="pieheader">
                 <h3>Open Positions by Department</h3>
                 <BiDotsHorizontalRounded className="logo" />
@@ -33,46 +32,9 @@ function Piechart() {
             </div>
             
             
-        </Container>
+        </div>
     )
 }
 
 export default Piechart
 
-const Container = styled.div`
-    margin-top:40px;
-    color:#fff;
-    border:1px #424242;
-    border-radius: 19px;
-    background: linear-gradient(225deg, #161616, #131313);
-    box-shadow:  -7px 7px 29px #0b0b0b,
-                 7px -7px 29px #1f1f1f;
-    .container{
-        position:relative;
-        
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
-    
-    p{
-        position:absolute;
-        font-size:11px;
-    }
-    .pieheader{
-        display:flex;
-        justify-content:space-around;
-        align-items:center;
-        padding-top:19px;
-        h3{
-            margin:0;
-            font-size:15px;
-            cursor:pointer;
-        }
-        .logo{
-            font-size:20px;
-            cursor:pointer;
-        }
-
-    }
-`

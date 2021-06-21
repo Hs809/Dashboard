@@ -1,6 +1,5 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Line} from 'react-chartjs-2'
-import styled from 'styled-components'
 import {ImFolderDownload} from 'react-icons/im'
 import {BiDotsVerticalRounded} from 'react-icons/bi'
 
@@ -38,7 +37,7 @@ class Chart extends React.Component {
    
     render() {
         return (
-            <Container style={{position: "relative", width: 500, height: 290 }}>
+            <div className = "chartContainer" style={{position: "relative", width: 500, height: 290 }}>
                 <div className="title">
                     <h3>Application Received</h3>
                     <div>
@@ -55,39 +54,11 @@ class Chart extends React.Component {
                     }}  
                     data = {this.state.data}
                 />
-            </Container>
+            </div>
         )
     }
 }
 
 export default Chart
-const Container = styled.div`
-    margin-top:60px;
-    color:#fff;
-    border-radius: 12px;
-background: #151515;
-box-shadow:  15px 15px 30px #0c0c0c,
-             -15px -15px 30px #1e1e1e;
-    
-    .title{
-        display:flex;
-        justify-content:space-around;
-        align-items:center;
-        h3{
-            cursor:pointer;
-        }
-        div{
-            display:flex;
-            justify-content:space-around;
-            align-items:center;
-            p{
-                margin-right:10px;
-                margin-left:10px;
-                cursor:pointer;
-            }
-            cursor:pointer;
 
-        }
-    }
-`
  
